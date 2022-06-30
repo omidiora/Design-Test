@@ -1,6 +1,6 @@
 # Getting Started with this Application
 
-This project built on Reactjs and Material Ui.
+This project was built on Reactjs and Material Ui.
 
 ## Available Scripts
 
