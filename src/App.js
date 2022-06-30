@@ -3,6 +3,9 @@ import './App.css';
 import Sidebar from './Component/Sidebar';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import  React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from './Component/Home';
 
 
 function App() {
@@ -17,10 +20,15 @@ function App() {
     setMode(!mode)
   }
   return (
-    <ThemeProvider theme={darkTheme} > 
-        <Sidebar onChangeMode={onChangeMode} mode={mode}/>
-    </ThemeProvider>
+    <Router>
     
+    <Routes>
+        <Route path="/" element={<Home />} />
+      
+      </Routes>
+        
+    
+    </Router>
     
   );
 }
