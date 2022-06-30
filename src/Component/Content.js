@@ -79,8 +79,7 @@ elevation={3}
         }}
         
        
-    
-      /> 
+  /> 
 
 <Button variant="contained" size='small' style={{width:160,paddingBottom:15,marginBottom:220, left:28,top:30}}>SAVE NEW NOTE</Button>
 
