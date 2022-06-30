@@ -340,7 +340,7 @@ export default function Sidebar(props) {
       >
         <div md={{ flexGrow: 1 }} >
         <Typography   	sx={{ display: { xs: 'none', sm: 'none', md: 'block' }}} style={{color:'black' ,marginLeft:"100px",fontSize:20}}><b >Notes</b>: The textarea in this page should be a rich text.</Typography></div>
-        <Box   sx={{ flexDirection: 'row' ,display: 'flex', p: 1,  borderRadius: 1  ,      justifyContent: 'space-evenly', marginLeft: { xs: '0px', sm: '0px', md: '480px' }  }} 
+        <Box   sx={{ flexDirection: 'row' ,display: 'flex', p: 1,  borderRadius: 1  ,      justifyContent: 'space-evenly', marginLeft: { xs: '0px', sm: '0px', md: '420px' }  }} 
         //  style={{color:'black' ,marginLeft:"400px"}}
          >
 
@@ -350,24 +350,24 @@ export default function Sidebar(props) {
                 width: { sm:"90px",md:"90%"} ,
             }}
             >
-            <SettingsIcon onClick={()=>props.onChangeMode()}/>
+             <img src={require("../asset/Image/G.png")} alt="Avatar" align="left" />
+
             </Box>
             <Box style={{backgroundColor:'black' ,height:28}}>
-            <DarkModeIcon  style={{ color:"white" }} onClick={()=>props.onChangeMode()}/>
             </Box>
 
             {/* style={{color:'red' ,marginLeft:"40px" ,border:"1px solid black",padding:10}}  */}
 
             <Typography  
              sx={{ 
-                width: { sm:"90px",md:"90%"} ,
+                width: { sm:"80px",md:"80%"} ,
                 marginBottom:{ xs: 31,sm:29,md: 30 },
             // height: { sm:"100px",md:"20%"},
             padding:1,
             border:"2px solid black",
             color:'red',
             marginLeft:13}}>
-            AARE
+          <img src={require("../asset/Image/AARE.png")} alt="Avatar" style={{width:50}} align="left" />
         </Typography>
         
         </Box>
